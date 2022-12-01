@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2022-12-01T11:06:40.0835024Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17 Update 3</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17 Update 3</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17 Update 3</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V17 Update 3</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp">
+    <Member Name="Report_Temp" Datatype="&quot;IFZ_Report&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="F_Termico" Datatype="Bool" />
+          <Member Name="F_Termico_N" Datatype="Bool" />
+          <Member Name="F_Termico_PR" Datatype="Bool" />
+          <Member Name="F_Atasco" Datatype="Bool" />
+          <Member Name="F_Atasco_N" Datatype="Bool" />
+          <Member Name="F_Atasco_PR" Datatype="Bool" />
+          <Member Name="F_CM" Datatype="Bool" />
+          <Member Name="F_CM_N" Datatype="Bool" />
+          <Member Name="F_CM_PR" Datatype="Bool" />
+          <Member Name="F_Galibo" Datatype="Bool" />
+          <Member Name="F_Galibo_N" Datatype="Bool" />
+          <Member Name="F_Galibo_PR" Datatype="Bool" />
+          <Member Name="F_Encoder" Datatype="Bool" />
+          <Member Name="F_Encoder_N" Datatype="Bool" />
+          <Member Name="F_Encoder_PR" Datatype="Bool" />
+          <Member Name="F_Alimentacion" Datatype="Bool" />
+          <Member Name="F_Alimentacion_N" Datatype="Bool" />
+          <Member Name="F_Alimentacion_PR" Datatype="Bool" />
+          <Member Name="F_Alimentacion_CTR" Datatype="Bool" />
+          <Member Name="F_Alimentacion_CTR_N" Datatype="Bool" />
+          <Member Name="F_Alimentacion_CTR_PR" Datatype="Bool" />
+          <Member Name="F_Emergencia" Datatype="Bool" />
+          <Member Name="F_Emergencia_N" Datatype="Bool" />
+          <Member Name="F_Emergencia_PR" Datatype="Bool" />
+          <Member Name="En_Marcha" Datatype="Bool" />
+          <Member Name="Ahorro_Energia" Datatype="Bool" />
+          <Member Name="Error" Datatype="Bool" />
+          <Member Name="Manual" Datatype="Bool" />
+          <Member Name="Paro_Forzado" Datatype="Bool" />
+          <Member Name="Pendiente_Rearme" Datatype="Bool" />
+          <Member Name="Arrancando" Datatype="Bool" />
+          <Member Name="Reset" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Word_Aux" Datatype="Word" />
+    <Member Name="Entrada_Aux" Datatype="Bool" />
+    <Member Name="Salida_Aux" Datatype="Bool" />
+    <Member Name="Error_Aux" Datatype="Bool" />
+    <Member Name="Reset_Aux" Datatype="Bool" />
+    <Member Name="Rearme_PE_Blink" Datatype="Bool" />
+    <Member Name="Sirena_Aux" Datatype="Bool" />
+    <Member Name="Sirena_2_Aux" Datatype="Bool" />
+    <Member Name="Sirena_3_Aux" Datatype="Bool" />
+    <Member Name="Error_2_Aux" Datatype="Bool" />
+    <Member Name="Error_3_Aux" Datatype="Bool" />
+    <Member Name="Aire_Aux" Datatype="Bool" />
+    <Member Name="Valor_Ant" Datatype="Bool" />
+    <Member Name="Dint_Aux" Datatype="DInt" />
+    <Member Name="Error_BLF1" Datatype="Bool" />
+    <Member Name="Error_BLF2" Datatype="Bool" />
+    <Member Name="Error_BLF3" Datatype="Bool" />
+    <Member Name="INSERTAR_REARME" Datatype="Bool" />
+    <Member Name="Arrancando_Aux" Datatype="Bool" />
+    <Member Name="INSERTAR_BALIZA" Datatype="Bool" />
+    <Member Name="Paro_Instalacion_Aux" Datatype="Bool" />
+    <Member Name="ZE_Pendiente_Rearme" Datatype="Bool" />
+  </Section>
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Gestion balizas</Name>
+      <Number>1</Number>
+      <ProgrammingLanguage>STL</ProgrammingLanguage>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StatementList xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StatementList/v4">
+  <StlStatement UId="21">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Reset atascos" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="32">
+    <StlToken Text="Assign" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="Reset_Aux" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="34">
+    <StlToken Text="EMPTY_LINE" />
+  </StlStatement>
+  <StlStatement UId="35">
+    <StlToken Text="CALL" />
+    <Access Scope="Call">
+      <CallInfo Name="FC14_Balizas" BlockType="FC">
+        <Parameter Name="Inicializar_Reporte" Section="Input" Type="Bool">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>Bool</ConstantType>
+              <ConstantValue>TRUE</ConstantValue>
+            </Constant>
+          </Access>
+        </Parameter>
+        <Parameter Name="Reset" Section="Input" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Reset_Aux" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Periferia" Section="Input" Type="Bool">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>Bool</ConstantType>
+              <ConstantValue>FALSE</ConstantValue>
+            </Constant>
+          </Access>
+        </Parameter>
+        <Parameter Name="Emergencia" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Report_Temp" />
+              <Component Name="F_Emergencia" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="F_Termico" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Report_Temp" />
+              <Component Name="F_Termico" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="F_Atasco" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Report_Temp" />
+              <Component Name="F_Atasco" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="F_Seccionador" Section="Output" Type="Bool">
+          <Access Scope="GlobalVariable">
+            <Symbol>
+              <Component Name="Bit_basura" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="F_Galibo" Section="Output" Type="Bool">
+          <Access Scope="GlobalVariable">
+            <Symbol>
+              <Component Name="Bit_basura" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Manual" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Report_Temp" />
+              <Component Name="Manual" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Alimentacion" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Report_Temp" />
+              <Component Name="F_Alimentacion" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Alimentacion_CTR" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Report_Temp" />
+              <Component Name="F_Alimentacion_CTR" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Arrancando" Section="Output" Type="Bool">
+          <Access Scope="GlobalVariable">
+            <Symbol>
+              <Component Name="Bit_basura" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Pendiente_Rearme" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Report_Temp" />
+              <Component Name="Pendiente_Rearme" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Error" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Error_Aux" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Sirena" Section="Output" Type="Bool">
+          <Access Scope="LocalVariable">
+            <Symbol>
+              <Component Name="Sirena_Aux" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="CS_Error" Section="Output" Type="Bool">
+          <Access Scope="GlobalVariable">
+            <Symbol>
+              <Component Name="Bit_basura" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="CS_Blink" Section="Output" Type="Bool">
+          <Access Scope="GlobalVariable">
+            <Symbol>
+              <Component Name="Bit_basura" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Report_Zona" Section="InOut" Type="&quot;IFZ_Report&quot;">
+          <Access Scope="GlobalVariable">
+            <Symbol>
+              <Component Name="DB1_Control" />
+              <Component Name="Z_R" />
+              <Component Name="Z_Proceso_1" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Report_Global" Section="InOut" Type="&quot;IFZ_Report&quot;">
+          <Access Scope="GlobalVariable">
+            <Symbol>
+              <Component Name="DB1_Control" />
+              <Component Name="Z_R" />
+              <Component Name="Z_CC1" />
+            </Symbol>
+          </Access>
+        </Parameter>
+        <Parameter Name="Control_Zona" Section="InOut" Type="&quot;IFZ_Control&quot;">
+          <Access Scope="GlobalVariable">
+            <Symbol>
+              <Component Name="DB1_Control" />
+              <Component Name="Z_C" />
+              <Component Name="Z_Proceso_1" />
+            </Symbol>
+          </Access>
+        </Parameter>
+      </CallInfo>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="78">
+    <StlToken Text="EMPTY_LINE" />
+  </StlStatement>
+  <StlStatement UId="79">
+    <StlToken Text="A" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="Error_Aux" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="81">
+    <StlToken Text="AN" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="Paro_Instalacion_Aux" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="23">
+    <StlToken Text="Assign" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Baliza_PE" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="87">
+    <StlToken Text="Assign" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Baliza_atasco" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="89">
+    <StlToken Text="EMPTY_LINE" />
+  </StlStatement>
+  <StlStatement UId="90">
+    <StlToken Text="A" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="Report_Temp" />
+        <Component Name="F_Emergencia" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="92">
+    <StlToken Text="AN" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="Paro_Instalacion_Aux" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="94">
+    <StlToken Text="AN" />
+    <Access Scope="LocalVariable">
+      <Symbol>
+        <Component Name="ZE_Pendiente_Rearme" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="26">
+    <StlToken Text="Assign" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Baliza_atasco" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+</StatementList></NetworkSource>
+          <ProgrammingLanguage>STL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Tras rearme de emergencias; el sistema, antes de arrancar, debe avisar mediante sirena (de los cuadros de control asociados a la zona de emergencia activada) de la siguiente forma: 5 segundos de forma intermitente (1Hz) y 3 segundos con sonido continuo. Tras este aviso de 8 segundos, el sistema arrancará normalmente.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="9" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>
